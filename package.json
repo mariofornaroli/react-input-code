@@ -62,5 +62,17 @@
   },
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "react",
+    "react-input-code",
+    "react-component",
+    "react-input",
+    "react-input-activation-code",
+    "react-input-registration-code",
+    "react-code",
+    "html-input",
+    "html-input-code",
+    "react-cipher-code"
   ]
 }
