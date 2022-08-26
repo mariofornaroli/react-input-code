@@ -2,7 +2,10 @@
   "name": "react-input-code",
   "version": "1.0.0",
   "description": "React component to insert a code in a series of single char input elements",
-  "author": "Mario Fornaroli",
+  "author": {
+    "name": "Mario Fornaroli",
+    "email": "mario.fornaroli@yahoo.it"
+  },
   "license": "MIT",
   "repository": "https://github.com/mariofornaroli/react-input-code",
   "main": "dist/index.js",
