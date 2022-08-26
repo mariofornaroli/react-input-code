@@ -1,7 +1,7 @@
-import { ExampleComponent } from '.'
+import { ReactInputCode } from '.'
 
-describe('ExampleComponent', () => {
+describe('ReactInputCode', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(ReactInputCode).toBeTruthy()
   })
 })

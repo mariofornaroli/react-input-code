@@ -1,10 +1,13 @@
 import React from 'react'
 
-import { ExampleComponent } from 'react-input-code'
+import { ReactInputCode } from 'react-input-code'
 import 'react-input-code/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <ReactInputCode 
+  className='my-input-code'
+  itemClassName='code-item'
+  nItems={5} />
 }
 
 export default App

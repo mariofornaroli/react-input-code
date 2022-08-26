@@ -1,10 +1,5 @@
 import * as React from 'react'
-import styles from './styles.module.css'
+import CodeItemList from './CodeItemList'
+import { ReactInputCodeProps } from './types/ReactInputCode'
 
-interface Props {
-  text: string
-}
-
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+export const ReactInputCode = (props: ReactInputCodeProps) => <CodeItemList {...props}/>
