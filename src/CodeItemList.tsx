@@ -17,6 +17,7 @@ const CodeItemList = (props: ReactInputCodeProps) => {
       str[_index] = itemValue;
       str = str.join('');
       onChange(str)
+      setCurrentIndex(currentIndex+1)
     }
   }
 
