@@ -6,7 +6,7 @@ export interface ReactInputCodeProps {
     value: any;
     onChange: Function;
     type: React.HTMLInputTypeAttribute | undefined;
-    autofocus?: boolean;
+    autoFocus?: boolean;
 }
 
 

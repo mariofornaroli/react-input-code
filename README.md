@@ -27,16 +27,32 @@ const App = () => {
     <ReactInputCode
       value={value}
       onChange={setValue}
-      type={'text'}
-      className='my-input-code'
-      itemClassName='my-code-item'
+      type="text"
+      className="my-input-code"
+      itemClassName="my-code-item"
       nItems={6}
-      autofocus={true} />
+      autoFocus={true} />
 
     <p>Current value: {value}</p>
   </>
 }
 ```
+
+## Props
+
+* nItems - number of items composing che html input code component
+* value - control the current value
+* onChange - subscribe to change events
+* type - type attribute of each html input element ('text', 'number', 'password', etc...)
+* className - additional class applied to the component container
+* itemClassName - additional class applied to each element
+* autoFocus - (optional) if set to true the first elemnt will be focused on component load
+
+
+## Controlled Props
+
+You can control the value / onChange props (specify the current value of the control) by providing values for them.
+
 
 ## License
 

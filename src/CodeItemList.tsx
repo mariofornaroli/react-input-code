@@ -5,7 +5,7 @@ import { ReactInputCodeProps } from './types/ReactInputCode';
 import styles from './CodeItemList.module.css'
 
 const CodeItemList = (props: ReactInputCodeProps) => {
-  const { className, nItems, itemClassName, value, type, onChange, autofocus } = props;
+  const { className, nItems, itemClassName, value, type, onChange, autoFocus } = props;
   const [currentIndex, setCurrentIndex] = useState(0)
   const [interactionCounter, setInteractionCounter] = useState(0)
 
@@ -51,7 +51,7 @@ const CodeItemList = (props: ReactInputCodeProps) => {
         setCurrentIndex={setCurrentIndex}
         isFocused={currentIndex === i}
         interactionCounter={interactionCounter}
-        autofocus={autofocus}
+        autoFocus={autoFocus}
       />
       retElements.push(el)
     }

@@ -9,11 +9,11 @@ const App = () => {
     <ReactInputCode
       value={value}
       onChange={setValue}
-      type={'text'}
-      className='my-input-code'
-      itemClassName='my-code-item'
+      type="text"
+      className="my-input-code"
+      itemClassName="my-code-item"
       nItems={6}
-      autofocus={true} />
+      autoFocus={true} />
 
     <p>Current value: {value}</p>
   </>
