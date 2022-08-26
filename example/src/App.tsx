@@ -3,18 +3,19 @@ import ReactInputCode from 'react-input-code'
 import 'react-input-code/dist/index.css'
 
 const App = () => {
-  const [val, setVal] = useState('')
+  const [value, setValue] = useState('')
 
   return <>
     <ReactInputCode
-      value={val}
-      onChange={(e: any) => setVal(e)}
+      value={value}
+      onChange={setValue}
       type={'text'}
       className='my-input-code'
-      itemClassName='code-item'
+      itemClassName='my-code-item'
       nItems={6}
       autofocus={true} />
-      <p>Current value: {val}</p>
+
+    <p>Current value: {value}</p>
   </>
 }
 
