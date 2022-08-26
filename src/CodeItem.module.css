@@ -1,5 +1,17 @@
 .code-item {
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 1.2rem;
+  color: #333;
+  border: 1px solid #333;
+  outline: none;
   cursor: pointer;
+  margin-right: 0.8rem;
+  text-align: center;
+  padding: 0.2rem;
+  border-radius: 4px;
+}
+
+.code-item:focus {
+  border: 2px solid #4caf50;
 }
