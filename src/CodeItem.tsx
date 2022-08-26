@@ -13,14 +13,19 @@ export interface CodeItemProps {
   onClickHandler: (index: number) => void;
   isFocused: boolean;
   interactionCounter: number;
+  autofocus?: boolean;
 }
 
 const CodeItem = (props: CodeItemProps) => {
-  const { itemClassName, value, onChange, itemIndex, type, onClickHandler, isFocused, interactionCounter } = props;
+  const { itemClassName, value, onChange, itemIndex, type, onClickHandler, isFocused, interactionCounter, autofocus } = props;
   const inputRef = useRef(null);
 
   useEffect(() => {
     const inputEl: any = inputRef.current;
+    if (interactionCounter === 0 && !autofocus) {
+      inputEl && inputEl.blur();
+      return;
+    }
     if (isFocused) {
       inputEl && inputEl.focus();
     } else {
@@ -28,6 +33,10 @@ const CodeItem = (props: CodeItemProps) => {
     }
   }, [isFocused, interactionCounter])
 
+  useEffect(() => {
+
+  }, [])
+  
   const handleFocus = (event: any) => event.target.select();
 
   return (

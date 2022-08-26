@@ -14,7 +14,7 @@ const App = () => {
       className='my-input-code'
       itemClassName='code-item'
       nItems={6}
-      autofocus={false} />
+      autofocus={true} />
       <p>Current value: {val}</p>
   </>
 }
