@@ -1,4 +1,5 @@
 import * as React from 'react'
+import styles from './CodeItem.module.css'
 
 export interface CodeItemProps {
   itemClassName: string;
@@ -9,7 +10,7 @@ const CodeItem = (props: CodeItemProps) => {
 
   return (
     <React.Fragment>
-      <input type="text" className={itemClassName} />
+      <input type="text" className={`code-item ${styles['code-item']} ${itemClassName}`} />
     </React.Fragment>
   )
 }

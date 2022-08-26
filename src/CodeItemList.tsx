@@ -2,7 +2,8 @@ import * as React from 'react'
 import { useMemo } from 'react';
 import CodeItem from './CodeItem';
 import { ReactInputCodeProps } from './types/ReactInputCode';
-import './CodeItemList.css'
+import styles from './CodeItemList.module.css'
+
 
 const CodeItemList = (props: ReactInputCodeProps) => {
   const { className, nItems, itemClassName } = props;
@@ -21,9 +22,9 @@ const CodeItemList = (props: ReactInputCodeProps) => {
     return retElements;
 
   }, [nItems])
-
-  return <div className={`input-codes ${className}`}>
-    {elements}
+ 
+  return <div className={`codes-container ${className} ${styles['codes-container']}`}>
+    {elements} 
   </div>
 }
 

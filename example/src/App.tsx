@@ -7,7 +7,7 @@ const App = () => {
   return <ReactInputCode 
   className='my-input-code'
   itemClassName='code-item'
-  nItems={5} />
+  nItems={6} />
 }
 
 export default App
