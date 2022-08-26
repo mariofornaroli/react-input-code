@@ -2,7 +2,8 @@
 
 > React component to insert a code in a series of single char input elements
 
-![alt text](https://github.com/mariofornaroli/react-input-code/tree/main/static/demo_image.jpg?raw=true)
+
+![demo_image](https://user-images.githubusercontent.com/16925256/186970066-84f5741a-9d6d-442e-b5cf-7f62ceadb2a1.jpg)
 
 [![NPM](https://img.shields.io/npm/v/react-input-code.svg)](https://www.npmjs.com/package/react-input-code) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
