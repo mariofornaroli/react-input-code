@@ -28,16 +28,19 @@ const CodeItem = (props: CodeItemProps) => {
     }
   }, [isFocused, interactionCounter])
 
+  const handleFocus = (event: any) => event.target.select();
+
   return (
     <React.Fragment>
       <input
         ref={inputRef}
         type={type}
-        value={value}
+        value={value || ''}
         onChange={(e) => onChange(e, itemIndex)}
         className={`code-item ${styles['code-item']} ${itemClassName}`}
         onClick={() => onClickHandler(itemIndex)}
         maxLength={1}
+        onFocus={handleFocus}
       />
     </React.Fragment>
   )
