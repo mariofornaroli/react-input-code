@@ -59,13 +59,10 @@ const CodeItemList = (props: ReactInputCodeProps) => {
   }
 
   return (
-    <React.Fragment>
-      <p>currentIndex: {currentIndex}</p>
-      <p>interactionCounter: {interactionCounter}</p>
+    <React.Fragment>      
       <div className={`codes-container ${className} ${styles['codes-container']}`}>
         {getElements()}
       </div>
-      <p>value: {value}</p>
     </React.Fragment>)
 }
 
