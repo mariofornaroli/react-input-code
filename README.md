@@ -31,10 +31,8 @@ const App = () => {
       className="my-input-code"
       itemClassName="my-code-item"
       nItems={6}
-      autoFocus={true} />
-
-    <p>Current value: {value}</p>
-  </>
+      autoFocus={true} 
+      placeholder={'-'}/>
 }
 ```
 
@@ -43,10 +41,11 @@ const App = () => {
 * nItems - number of items composing che html input code component
 * value - control the current value
 * onChange - subscribe to change events
-* type - type attribute of each html input element ('text', 'number', 'password', etc...)
-* className - additional class applied to the component container
-* itemClassName - additional class applied to each element
+* type - (optional) type attribute of each html input element ('text', 'number', 'password', etc...). Default value is 'text'
+* className - (optional) additional class applied to the component container
+* itemClassName - (optional) additional class applied to each element
 * autoFocus - (optional) if set to true the first elemnt will be focused on component load
+* placeholder - (optional) placeholder, the same char introduced in each element. If more than one char is present, only the first char will be considered
 
 
 ## Controlled Props

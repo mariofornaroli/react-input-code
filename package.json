@@ -1,6 +1,6 @@
 {
   "name": "react-input-code",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "React component to insert a code in a series of single char input elements",
   "author": {
     "name": "Mario Fornaroli",

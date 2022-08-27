@@ -7,6 +7,7 @@ export interface ReactInputCodeProps {
     onChange: Function;
     type: React.HTMLInputTypeAttribute | undefined;
     autoFocus?: boolean;
+    placeholder?: string;
 }
 
 

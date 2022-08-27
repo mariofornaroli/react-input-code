@@ -1,11 +1,12 @@
 import * as React from 'react'
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import CodeItem from './CodeItem';
 import { ReactInputCodeProps } from './types/ReactInputCode';
 import styles from './CodeItemList.module.css'
 
 const CodeItemList = (props: ReactInputCodeProps) => {
-  const { className, nItems, itemClassName, value, type, onChange, autoFocus } = props;
+  const { className, nItems, itemClassName, value, type, onChange, autoFocus,
+    placeholder } = props;
   const [currentIndex, setCurrentIndex] = useState(0)
   const [interactionCounter, setInteractionCounter] = useState(0)
 
@@ -31,6 +32,13 @@ const CodeItemList = (props: ReactInputCodeProps) => {
     setInteractionCounter(interactionCounter + 1)
   }
 
+  const placeholderFirstChar = useMemo(() => {
+    if (placeholder && placeholder.length >1) {
+      return placeholder.charAt(0)
+    }  
+    return placeholder
+  }, [placeholder])
+  
   const getElements = (): JSX.Element[] => {
     const retElements: JSX.Element[] = [];
     if (!nItems) {
@@ -52,6 +60,7 @@ const CodeItemList = (props: ReactInputCodeProps) => {
         isFocused={currentIndex === i}
         interactionCounter={interactionCounter}
         autoFocus={autoFocus}
+        placeholder={placeholderFirstChar}
       />
       retElements.push(el)
     }
