@@ -32,7 +32,8 @@ const App = () => {
       itemClassName="my-code-item"
       nItems={6}
       autoFocus={true} 
-      placeholder={'-'}/>
+      placeholder={'-'}
+      disabled={true}/>
 }
 ```
 
@@ -46,6 +47,7 @@ const App = () => {
 * itemClassName - (optional) additional class applied to each element
 * autoFocus - (optional) if set to true the first elemnt will be focused on component load
 * placeholder - (optional) placeholder, the same char introduced in each element. If more than one char is present, only the first char will be considered
+* disabled - (optional) controls field disabled prop
 
 
 ## Controlled Props

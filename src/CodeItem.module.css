@@ -16,3 +16,8 @@
   border: 2px solid #4caf50;
   box-shadow: 0 0 5pt 0.5pt #4caf4f6e;
 }
+
+.code-item:disabled {
+  color: #999;
+  border-color: #999;
+}

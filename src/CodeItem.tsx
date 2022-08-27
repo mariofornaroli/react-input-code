@@ -15,10 +15,11 @@ export interface CodeItemProps {
   interactionCounter: number;
   autoFocus?: boolean;
   placeholder?: string;
+  disabled?: boolean;
 }
 
 const CodeItem = (props: CodeItemProps) => {
-  const { itemClassName, value, onChange, itemIndex, type, onClickHandler, isFocused, interactionCounter, autoFocus, placeholder } = props;
+  const { itemClassName, value, onChange, itemIndex, type, onClickHandler, isFocused, interactionCounter, autoFocus, placeholder, disabled } = props;
   const inputRef = useRef(null);
 
   useEffect(() => {
@@ -52,6 +53,7 @@ const CodeItem = (props: CodeItemProps) => {
         maxLength={1}
         onFocus={handleFocus}
         placeholder={placeholder}
+        disabled={disabled}
       />
     </React.Fragment>
   )

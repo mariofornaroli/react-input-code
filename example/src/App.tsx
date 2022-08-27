@@ -14,7 +14,8 @@ const App = () => {
       itemClassName="my-code-item"
       nItems={6}
       autoFocus={true} 
-      placeholder={'-'}/>
+      placeholder={'-'}
+      disabled={true}/>
 
     <p>Current value: {value}</p>
   </>

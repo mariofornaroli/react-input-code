@@ -8,6 +8,7 @@ export interface ReactInputCodeProps {
     type: React.HTMLInputTypeAttribute | undefined;
     autoFocus?: boolean;
     placeholder?: string;
+    disabled?: boolean;
 }
 
 

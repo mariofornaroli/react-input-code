@@ -6,7 +6,7 @@ import styles from './CodeItemList.module.css'
 
 const CodeItemList = (props: ReactInputCodeProps) => {
   const { className, nItems, itemClassName, value, type, onChange, autoFocus,
-    placeholder } = props;
+    placeholder, disabled } = props;
   const [currentIndex, setCurrentIndex] = useState(0)
   const [interactionCounter, setInteractionCounter] = useState(0)
 
@@ -18,7 +18,7 @@ const CodeItemList = (props: ReactInputCodeProps) => {
       str[_index] = itemValue;
       str = str.join('');
       onChange(str)
-      setCurrentIndex(currentIndex+1)
+      setCurrentIndex(currentIndex + 1)
     }
   }
 
@@ -33,12 +33,12 @@ const CodeItemList = (props: ReactInputCodeProps) => {
   }
 
   const placeholderFirstChar = useMemo(() => {
-    if (placeholder && placeholder.length >1) {
+    if (placeholder && placeholder.length > 1) {
       return placeholder.charAt(0)
-    }  
+    }
     return placeholder
   }, [placeholder])
-  
+
   const getElements = (): JSX.Element[] => {
     const retElements: JSX.Element[] = [];
     if (!nItems) {
@@ -61,6 +61,7 @@ const CodeItemList = (props: ReactInputCodeProps) => {
         interactionCounter={interactionCounter}
         autoFocus={autoFocus}
         placeholder={placeholderFirstChar}
+        disabled={disabled}
       />
       retElements.push(el)
     }
@@ -68,7 +69,7 @@ const CodeItemList = (props: ReactInputCodeProps) => {
   }
 
   return (
-    <React.Fragment>      
+    <React.Fragment>
       <div className={`codes-container ${className} ${styles['codes-container']}`}>
         {getElements()}
       </div>
