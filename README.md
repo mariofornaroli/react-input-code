@@ -15,6 +15,20 @@ npm install --save react-input-code
 
 ## Usage
 
+1 . Require react-input-code after installation
+
+```js
+import ReactInputCode from 'react-input-code';
+```
+
+2 . Add style css from module
+
+```js
+import 'react-input-code/dist/index.css'
+```
+
+3 . Include react-input-code as in the following example
+
 ```tsx
 import React, { useState } from 'react'
 import ReactInputCode from 'react-input-code'
