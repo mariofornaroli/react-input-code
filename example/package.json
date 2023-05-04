@@ -24,7 +24,11 @@
     "typescript": "file:../node_modules/typescript"
   },
   "devDependencies": {
-    "@babel/plugin-syntax-object-rest-spread": "^7.8.3"
+    "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
+    "@typescript-eslint/eslint-plugin": "^5.59.2",
+    "@typescript-eslint/parser": "^5.59.2",
+    "eslint": "^8.39.0",
+    "eslint-plugin-react": "^7.32.2"
   },
   "browserslist": {
     "production": [

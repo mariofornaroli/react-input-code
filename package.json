@@ -1,6 +1,6 @@
 {
   "name": "react-input-code",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "React component to insert a code in a series of single char input elements",
   "author": {
     "name": "Mario Fornaroli",
@@ -27,7 +27,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^16.0.0 || ^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
